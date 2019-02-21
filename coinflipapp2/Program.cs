@@ -25,9 +25,16 @@ namespace coinflipapp2
             }
             else
             {
-                if (coin == 0)
+                if (coin == 0 && userGuess == "heads")
                 {
-                    Console.WriteLine("Tails. It really be like that sometimes");
+                    Console.WriteLine("Tails. It really be like that sometimes.");
+                }
+                else if (coin == 1 && userGuess == "tails")
+                {
+                    Console.WriteLine("Heads. It really be like that sometimes.");
+                }
+                else {
+                    Console.WriteLine("Unable to give an answer. Chances are you made a spelling error. Press enter or return to retry.");
                 }
             }
         }
